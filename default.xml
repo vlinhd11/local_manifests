@@ -12,6 +12,7 @@
   <project path="kernel/rpi" name="kernel_rpi" revision="vc4_master" remote="peyo"/>
   <project path="kernel/hardware/wifi/realtek/drivers/8192cu" name="kernel_hardware_wifi_realtek_drivers_8192cu" revision="master" remote="peyo"/>
   <project path="hardware/rpi" name="hardware_rpi" revision="master" remote="peyo"/>
+  <project path="external/bluetooth/hciconfig" name="external_bluetooth_hciconfig" revision="master" remote="peyo"/>
   <project path="device/brcm/rpi2" name="device_brcm_rpi2" revision="master" remote="peyo"/>
 
   <remove-project name="device/asus/flo-kernel" />
