@@ -1,0 +1,9 @@
+# Download Brillo source with patches(local_manifests)
+ $ repo init -u https://android.googlesource.com/brillo/manifest -b brillo-m10-release
+ $ cd .repo
+ $ git clone https://github.com/peyo-hd/local_manifests -b brillo
+ $ repo sync
+
+# Build for Raspberry Pi Zero
+ See https://github.com/peyo-hd/device_brcm_rpi/tree/brillo
+

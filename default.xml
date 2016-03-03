@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="peyo" fetch="https://github.com/peyo-hd"/>
+
+  <remove-project name="platform/bionic"/>
+  <project path="bionic" name="bionic" revision="brillo" remote="peyo"/>
+  
+  <project path="hardware/bsp/kernel/rpi" name="kernel_rpi" revision="vc4_master" remote="peyo"/>
+  <project path="device/brcm/rpi" name="device_brcm_rpi" revision="brillo" remote="peyo">
+    <copyfile dest="device/generic/brillo/kconfig/4.2/common.config" src="kconfig/4.2/common.config"/>
+    <copyfile dest="device/generic/brillo/kconfig/4.2/arm.config" src="kconfig/4.2/arm.config"/>
+    <copyfile dest="build/core/combo/arch/arm/armv6k.mk" src="arch/armv6k.mk"/>
+  </project>
+
+  <remove-project name="platform/hardware/bsp/marvell"/>
+  <remove-project name="device/marvell/abox_edge"/>
+  <remove-project name="kernel/common"/>
+  <remove-project name="platform/hardware/bsp/kernel/common/v4.1" />
+  <remove-project name="platform/hardware/bsp/kernel/intel/edison-v3.10" />
+  <remove-project name="platform/hardware/bsp/kernel/intel/minnowboard-v3.14" />
+  <remove-project name="platform/hardware/bsp/kernel/qcom/qcom-msm-v3.10" />
+  <remove-project name="platform/hardware/bsp/kernel/marvell/pxa-v3.14" />
+  <remove-project name="platform/hardware/bsp/kernel/rockchip"/>
+  <remove-project name="platform/hardware/bsp/kernel/freescale/picoimx-3.14" />
+</manifest>
