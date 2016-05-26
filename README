@@ -1,12 +1,10 @@
+Fork from peyo-hd
 # Download Android source with patches(local_manifests)
  Refer to http://source.android.com/source/downloading.html
  $ repo init -u https://android.googlesource.com/platform/manifest -b android-n-preview-2
  $ cd .repo
- $ git clone https://github.com/peyo-hd/local_manifests -b npv
+ $ git clone https://github.com/vlinhd11/local_manifests -b npv
  $ repo sync
 
 # Build for Raspberry Pi3
- See https://github.com/peyo-hd/device_brcm_rpi3
-
-# Build for Odroid C2
- See https://github.com/peyo-hd/device_aml_odrc2
+ See https://github.com/vlinhd11/device_brcm_rpi3
